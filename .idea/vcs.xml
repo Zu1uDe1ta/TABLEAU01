@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DATA-SCIENCE-" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DATA-SCIENCE-/RStudio_Test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hacker-Rank-Practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Machine-Learning-Tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SQL_NB" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SnakeGame" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TABLEAU01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Titanic-Machine-Learning-From-Disaster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Trinket-Projects" vcs="Git" />
+  </component>
+</project>
