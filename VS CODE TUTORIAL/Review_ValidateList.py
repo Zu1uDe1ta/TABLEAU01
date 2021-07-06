@@ -1,50 +1,34 @@
-# PROJECT_10 project_10 is the driver function for the program.
-
-# 	Name: Chris Chavez
-# 	Date: 06 JULY 2021
-# 	Class: CMPSC 132
-# 	Description: Implement Monte Carlo Method to Integrate a function.
-class Review_ValidateList:
-	def __init__(self):
-		self.sudoku_row = print(int(input("Please enter your Sudoku puzzle row for verification:  ")))
-
-	def sudoku_row_input(sudoku_row):
-			if ele in range (1, 10):
-				sudoku_row.append(ele)
-			else:
-				print("Your input is not acceptable value.")
-
-	def verify_sudoku_row_length(sudoku_row):
-		# chekc if input is a list
-		if not isinstance(sudoku_row, list): 
-			print ("Input was not a list")
-
-	def sudoku_row_length(sudoku_row):
-		# List should contain 9 elements 
-		if len(sudoku_row) < 9:
-			print ("This Sudoku row does not contain enough digits")
-		elif len(sudoku_row) > 9:
-			print ("This Sudoku row contains to many digits")
-		else: 
-			return sudoku_row
-
-	def value_repeated(): 
-
-		# Iterate each row
-		for ele in sudoku_row: 
-
-			# Define array to append found numbers
-			found = [] 
-
-			# Iterate each number in the row
-			for digit in row: 
-				# Check if current value is already foudn 
-				if digit not in found: 
-					# Store found values 
-					found.append(digit)
-				else: 
-					# Returns True if when it sees a repated number
-					print("This Sudoku row is not valid, it has repeated values.")
+#   Name: Chris Chavez
+#   Date: 06 JULY 2021
+#   Class: CMPSC 132
+#   Description: Sudoku Row Verifier.
 
 
-Review_ValidateList()
+
+
+def verify_row():
+  sudoku = []
+  print("Enter 9 numbers from 1 to 9 to make a sudoku row,\n we will verify that your row is a proper sudoku row. \n")
+  for i in range(0, 9):
+   print("Enter 1 digit at a time and press enter.".format(i+1))
+   elm = int(input())
+   sudoku.append(elm) # adding the element
+  print("The entered list is: \n",sudoku)
+
+  # Row should contain 9 elements
+  if len(sudoku) != 9: 
+    print("Row does not have 9 numbers")
+
+  found = []        
+  # Iterate each number in the row
+  for digit in sudoku:            
+      # Check if current value is already found 
+    if digit not in found:
+                # Store found values
+      found.append(digit)            
+    else:                 
+        # Returns True if when it sees a repeated number
+      print("You have a repeat digit in your row!") 
+  # If there were not repeated numbers, return False
+  print("It is a valid row!")
+
